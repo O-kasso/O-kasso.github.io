@@ -1,11 +1,14 @@
+body {
+  background-color: #3dab93; }
+
 .avatar-card .avatar {
   margin: 5% auto; }
   .avatar-card .avatar img {
     border-radius: 50%; }
-.avatar-card h1.name {
+.avatar-card .title.name {
   text-align: center;
   font-family: 'Audiowide', cursive;
-  color: red;
+  color: #94145c;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .hero.intro-hero {
@@ -19,8 +22,18 @@
   text-align: justify;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
-.social-links {
+.elsewhere {
   margin: 0 auto;
   max-width: 650px; }
+  .elsewhere .elsewhere-item a.github:active, .elsewhere .elsewhere-item a.github:hover {
+    color: #666; }
+  .elsewhere .elsewhere-item a.stackoverflow:active, .elsewhere .elsewhere-item a.stackoverflow:hover {
+    color: #d95706; }
+  .elsewhere .elsewhere-item a.linkedin:active, .elsewhere .elsewhere-item a.linkedin:hover {
+    color: #4873ae; }
+  .elsewhere .elsewhere-item a.mail:active, .elsewhere .elsewhere-item a.mail:hover {
+    color: #970505; }
+  .elsewhere .elsewhere-item a.spotify:active, .elsewhere .elsewhere-item a.spotify:hover {
+    color: #149414; }
 
 /*# sourceMappingURL=main.css.map */

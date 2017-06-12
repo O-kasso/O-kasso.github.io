@@ -1,3 +1,22 @@
+$teal: #048c6e;
+$teal-light: #3dab93;
+$teal-dark: #005744;
+$magenta: #94145c;
+$magenta-light: #c25091;
+$magenta-dark: #580032;
+
+$elsewhere-colors: (
+  github: #666,
+  stackoverflow: #d95706,
+  linkedin: #4873ae,
+  mail: #970505,
+  spotify: #149414,
+);
+
+body {
+  background-color: $teal-light;
+}
+
 .avatar-card {
   .avatar {
     img {
@@ -7,10 +26,10 @@
     margin: 5% auto;
   }
 
-  h1.name {
+  .title.name {
     text-align: center;
     font-family: 'Audiowide', cursive;
-    color: red;
+    color: $magenta;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
@@ -31,7 +50,18 @@
   }
 }
 
-.social-links {
+.elsewhere {
+  .elsewhere-item a {
+    @each $item, $color in $elsewhere-colors {
+      &.#{$item} {
+        &:active,
+        &:hover {
+          color: $color;
+        }
+      }
+    }
+  }
+
   margin: 0 auto;
   max-width: 650px;
 }
