@@ -1,0 +1,26 @@
+.avatar-card .avatar {
+  margin: 5% auto; }
+  .avatar-card .avatar img {
+    border-radius: 50%; }
+.avatar-card h1.name {
+  text-align: center;
+  font-family: 'Audiowide', cursive;
+  color: red;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.hero.intro-hero {
+  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center fixed;
+  background-size: auto 100%; }
+.hero .intro {
+  margin: 0 auto 15%;
+  padding: 1%;
+  max-width: 650px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.social-links {
+  margin: 0 auto;
+  max-width: 650px; }
+
+/*# sourceMappingURL=main.css.map */
