@@ -34,12 +34,7 @@ body {
   }
 }
 
-.hero {
-  &.intro-hero {
-    background: url("/public/assets/high-tech-bg.jpg") no-repeat center center fixed;
-    background-size: auto 100%;
-  }
-
+.intro-hero {
   .intro {
     margin: 0 auto 15%;
     padding: 1%;
@@ -48,6 +43,10 @@ body {
     text-align: justify;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
+
+  height: 100vh; // fix for mobile browser address bar appearing disappearing
+  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .elsewhere {

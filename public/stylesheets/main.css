@@ -11,16 +11,17 @@ body {
   color: #94145c;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
-.hero.intro-hero {
-  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center fixed;
-  background-size: auto 100%; }
-.hero .intro {
-  margin: 0 auto 15%;
-  padding: 1%;
-  max-width: 650px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: justify;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+.intro-hero {
+  height: 100vh;
+  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center;
+  background-size: cover; }
+  .intro-hero .intro {
+    margin: 0 auto 15%;
+    padding: 1%;
+    max-width: 650px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .elsewhere {
   margin: 0 auto;
