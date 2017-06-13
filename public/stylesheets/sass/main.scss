@@ -1,4 +1,5 @@
-@import "colors.scss";
+@import "colors";
+@import "breakpoints";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:400,700");
@@ -34,9 +35,12 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 
-  height: 100vh; // fix for mobile browser address bar appearing disappearing
-  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center;
-  background-size: cover;
+  min-height: 100vh; // fix for mobile browser address bar appearing disappearing
+  background: url("/public/assets/high-tech-mobile-bg.jpg") center center / cover no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    background: url("/public/assets/high-tech-bg.jpg") center center / cover no-repeat fixed;
+  }
 }
 
 .elsewhere {

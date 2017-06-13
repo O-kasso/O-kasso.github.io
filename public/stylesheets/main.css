@@ -15,9 +15,8 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .intro-hero {
-  height: 100vh;
-  background: url("/public/assets/high-tech-bg.jpg") no-repeat center center;
-  background-size: cover; }
+  min-height: 100vh;
+  background: url("/public/assets/high-tech-mobile-bg.jpg") center center/cover no-repeat; }
   .intro-hero .intro {
     margin: 0 auto 15%;
     padding: 1%;
@@ -25,6 +24,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
     text-align: justify;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+  @media screen and (min-width: 769px) {
+    .intro-hero {
+      background: url("/public/assets/high-tech-bg.jpg") center center/cover no-repeat fixed; } }
 
 .elsewhere {
   margin: 0 auto;
