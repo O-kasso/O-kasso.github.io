@@ -1,6 +1,24 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:400,700");
+.skills {
+  padding: 2em; }
+  .skills .title {
+    text-align: center;
+    font-family: 'Audiowide', Helvetica, sans-serif; }
+    .skills .title::before {
+      font-family: "FontAwesome";
+      content: "\f0ad ";
+      margin-right: 0.25em; }
+  .skills .primary-skills-list .card-content {
+    height: 4em;
+    padding: 1em; }
+  .skills .secondary-skills-list .tag {
+    font-size: 0.65em; }
+    @media screen and (min-width: 360px) {
+      .skills .secondary-skills-list .tag {
+        font-size: 0.75em; } }
+
 body {
   background-color: #3dab93; }
 
