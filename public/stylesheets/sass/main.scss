@@ -1,5 +1,6 @@
 @import "colors";
 @import "breakpoints";
+@import "mixins";
 @import "skills-list";
 
 //external
@@ -47,14 +48,41 @@ body {
 }
 
 .elsewhere {
-  .elsewhere-item a {
-    @each $item, $color in $elsewhere-colors {
-      &.#{$item} {
-        &:active,
-        &:hover {
-          color: $color;
-        }
+  .elsewhere-item {
+    @include hover-grow(1.4);
+
+    &:hover::after {
+      position: absolute;
+      font-size: 0.65em;
+      text-align: center;
+      top: 5em;
+      left: 0;
+      right: 0;
+
+      @media screen and (min-width: $tablet) {
+        font-size: 0.8em;
+        top: 4em;
       }
+    }
+
+    &.github:hover::after {
+      content: "Github";
+    }
+
+    &.stackoverflow:hover::after {
+      content: "StackOverflow";
+    }
+
+    &.linkedin:hover::after {
+      content: "LinkedIn";
+    }
+
+    &.mail:hover::after {
+      content: "Email";
+    }
+
+    &.resume:hover::after {
+      content: "Resumé";
     }
   }
 

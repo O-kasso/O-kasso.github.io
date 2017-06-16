@@ -13,17 +13,17 @@
 
   #primary-skills-list {
     .skill-meter {
+      @include hover-grow(1.1);
+
       padding: 1.5em;
       font-size: 0.85em;
       width: 100%;
-      transition: all 0.2s ease-in-out;
 
       @media screen and (min-width: 600px) {
         padding: 3em;
         font-size: 1em;
       }
 
-      &:hover { transform: scale(1.1); }
     }
 
     margin-bottom: 1.5em;
@@ -31,16 +31,15 @@
 
   #secondary-skills-list {
     .tag {
+      @include hover-grow(1.2);
+
       font-size: 0.65em;
       height: 3em;
-      transition: all 0.2s ease-in-out;
       color: $teal;
 
       @media screen and (min-width: 360px) {
         font-size: 0.8em;
       }
-
-      &:hover { transform: scale(1.2); }
     }
   }
 
