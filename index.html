@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="public/stylesheets/main.css">
+    <script src="/public/javascript/progressbar.js" defer></script>
+    <script src="/public/javascript/waypoints.js" defer></script>
+    <script src="/public/javascript/skill_progress.js" defer></script>
     <title>Omar Kassouar | Developer</title>
   </head>
   <body>
@@ -63,95 +66,32 @@
       </div>
     </section>
     <section class="skills container">
-      <h2 class="title is-2">Skills</h2>
+      <h3 class="title is-3">Skills</h3>
       <div class="skill-cards">
-        <ul class="primary-skills-list columns is-multiline is-mobile">
+        <ul id="primary-skills-list" class="columns is-multiline is-mobile">
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                Ruby on Rails
-              </div>
-            </div>
+            <div id="skill-ruby" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                Javascript
-              </div>
-            </div>
+            <div id="skill-javascript" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                Python
-              </div>
-            </div>
+            <div id="skill-python" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                HTML + CSS
-              </div>
-            </div>
+            <div id="skill-front-end" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                Shell Scripting
-              </div>
-            </div>
+            <div id="skill-shell" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                SQL
-              </div>
-            </div>
+            <div id="skill-sql" class="skill-meter card"></div>
           </li>
           <li class="skill column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                </figure>
-                </div>
-              <div class="card-content level-item has-text-centered">
-                Testing / Automation
-              </div>
-            </div>
+            <div id="skill-testing" class="skill-meter card"></div>
           </li>
         </ul>
-        <ul class="secondary-skills-list columns is-multiline is-mobile">
+        <ul id="secondary-skills-list" class="columns is-multiline is-mobile">
           <li class="skill column is-one-third-mobile is-2-tablet is-2-desktop">
             <span class="tag is-small level-item has-text-centered">
               Unix

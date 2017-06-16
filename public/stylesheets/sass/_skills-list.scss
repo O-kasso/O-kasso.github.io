@@ -8,23 +8,39 @@
 
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
+    color: #fff
   }
 
-  .primary-skills-list {
-    .card-content {
-      height: 4em;
-      padding: 1em;
+  #primary-skills-list {
+    .skill-meter {
+      padding: 1.5em;
+      font-size: 0.85em;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+
+      @media screen and (min-width: 600px) {
+        padding: 3em;
+        font-size: 1em;
+      }
+
+      &:hover { transform: scale(1.1); }
     }
+
+    margin-bottom: 1.5em;
   }
 
-  .secondary-skills-list {
+  #secondary-skills-list {
     .tag {
       font-size: 0.65em;
       height: 3em;
+      transition: all 0.2s ease-in-out;
+      color: $teal;
 
       @media screen and (min-width: 360px) {
-        font-size: 0.75em;
+        font-size: 0.8em;
       }
+
+      &:hover { transform: scale(1.2); }
     }
   }
 

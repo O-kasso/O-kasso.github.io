@@ -5,20 +5,35 @@
   padding: 2em; }
   .skills .title {
     text-align: center;
-    font-family: 'Audiowide', Helvetica, sans-serif; }
+    font-family: 'Audiowide', Helvetica, sans-serif;
+    color: #fff; }
     .skills .title::before {
       font-family: "FontAwesome";
       content: "\f0ad ";
       margin-right: 0.25em; }
-  .skills .primary-skills-list .card-content {
-    height: 4em;
-    padding: 1em; }
-  .skills .secondary-skills-list .tag {
+  .skills #primary-skills-list {
+    margin-bottom: 1.5em; }
+    .skills #primary-skills-list .skill-meter {
+      padding: 1.5em;
+      font-size: 0.85em;
+      width: 100%;
+      transition: all 0.2s ease-in-out; }
+      @media screen and (min-width: 600px) {
+        .skills #primary-skills-list .skill-meter {
+          padding: 3em;
+          font-size: 1em; } }
+      .skills #primary-skills-list .skill-meter:hover {
+        transform: scale(1.1); }
+  .skills #secondary-skills-list .tag {
     font-size: 0.65em;
-    height: 3em; }
+    height: 3em;
+    transition: all 0.2s ease-in-out;
+    color: #048c6e; }
     @media screen and (min-width: 360px) {
-      .skills .secondary-skills-list .tag {
-        font-size: 0.75em; } }
+      .skills #secondary-skills-list .tag {
+        font-size: 0.8em; } }
+    .skills #secondary-skills-list .tag:hover {
+      transform: scale(1.2); }
 
 body {
   background-color: #3dab93; }
