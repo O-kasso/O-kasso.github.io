@@ -8,7 +8,7 @@
 
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
-    color: #fff
+    color: $teal;
   }
 
   #primary-skills-list {
@@ -23,7 +23,6 @@
         padding: 3em;
         font-size: 1em;
       }
-
     }
 
     margin-bottom: 1.5em;
@@ -36,6 +35,7 @@
       font-size: 0.65em;
       height: 3em;
       color: $teal;
+      background-color: #fff;
 
       @media screen and (min-width: 360px) {
         font-size: 0.8em;
@@ -43,5 +43,6 @@
     }
   }
 
+  background-color: #eee;
   padding: 2em;
 }

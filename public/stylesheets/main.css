@@ -3,11 +3,12 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:400,700");
 .skills {
+  background-color: #eee;
   padding: 2em; }
   .skills .title {
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
-    color: #fff; }
+    color: #048c6e; }
     .skills .title::before {
       font-family: "FontAwesome";
       content: "\f0ad ";
@@ -29,7 +30,8 @@
     transition: all 0.2s ease-in-out;
     font-size: 0.65em;
     height: 3em;
-    color: #048c6e; }
+    color: #048c6e;
+    background-color: #fff; }
     .skills #secondary-skills-list .tag:hover {
       transform: scale(1.2); }
     @media screen and (min-width: 360px) {
