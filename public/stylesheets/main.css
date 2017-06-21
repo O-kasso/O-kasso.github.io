@@ -15,16 +15,30 @@
       margin-right: 0.25em; }
   .skills #primary-skills-list {
     margin-bottom: 1.5em; }
+    .skills #primary-skills-list .skill {
+      padding: 0.7em;
+      flex: none;
+      width: 50%; }
+      @media (min-width: 400px) {
+        .skills #primary-skills-list .skill {
+          width: 33.333%; } }
+      @media (min-width: 769px) {
+        .skills #primary-skills-list .skill {
+          padding: 1em;
+          width: 25%; } }
+      @media (min-width: 1384px) {
+        .skills #primary-skills-list .skill {
+          width: 16.66667%; } }
     .skills #primary-skills-list .skill-meter {
       transition: all 0.2s ease-in-out;
-      padding: 1.5em;
-      font-size: 0.85em;
+      padding: 2em;
+      font-size: 0.7em;
       width: 100%; }
       .skills #primary-skills-list .skill-meter:hover {
         transform: scale(1.1); }
       @media screen and (min-width: 600px) {
         .skills #primary-skills-list .skill-meter {
-          padding: 3em;
+          padding: 2.5em;
           font-size: 1em; } }
   .skills #secondary-skills-list .tag {
     transition: all 0.2s ease-in-out;

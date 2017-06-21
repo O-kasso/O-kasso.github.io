@@ -12,15 +12,34 @@
   }
 
   #primary-skills-list {
+    .skill {
+      padding: 0.7em;
+      flex: none;
+      width: 50%;
+
+      @media (min-width: 400px) {
+        width: 33.333%;
+      }
+
+      @media (min-width: $tablet) {
+        padding: 1em;
+        width: 25%;
+      }
+
+      @media (min-width: $fullhd) {
+        width: 16.66667%;
+      }
+    }
+
     .skill-meter {
       @include hover-grow(1.1);
 
-      padding: 1.5em;
-      font-size: 0.85em;
+      padding: 2em;
+      font-size: 0.7em;
       width: 100%;
 
       @media screen and (min-width: 600px) {
-        padding: 3em;
+        padding: 2.5em;
         font-size: 1em;
       }
     }
