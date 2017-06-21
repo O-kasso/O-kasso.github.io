@@ -1,4 +1,4 @@
-.skills {
+#skills-section {
   .title {
     &::before {
       font-family: "FontAwesome";
@@ -9,6 +9,7 @@
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
     color: $teal;
+    margin-bottom: 10%;
   }
 
   #primary-skills-list {
@@ -44,24 +45,23 @@
       }
     }
 
-    margin-bottom: 1.5em;
+    margin: 10% 0;
   }
 
   #secondary-skills-list {
     .tag {
       @include hover-grow(1.2);
 
-      font-size: 0.65em;
+      font-size: 0.6em;
       height: 3em;
       color: $teal;
       background-color: #fff;
 
-      @media screen and (min-width: 360px) {
-        font-size: 0.8em;
+      @media screen and (min-width: 375px) {
+        font-size: 0.7em;
       }
     }
   }
 
   background-color: #eee;
-  padding: 2em;
 }

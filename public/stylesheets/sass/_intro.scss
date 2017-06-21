@@ -1,0 +1,89 @@
+#intro-section {
+  .intro {
+    p {
+      font-family: 'Ubuntu', sans-serif;
+      text-align: justify;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      line-height: 1.5;
+      word-break: break-word;
+      margin: 0.5em 0;
+
+      @media (min-width: 375px) { font-size: 1.15em; }
+      @media (min-width: $tablet) { font-size: 1.4em; }
+    }
+
+    margin: 0 auto;
+    max-width: 650px;
+  }
+
+  background: url("/public/assets/high-tech-mobile-bg.jpg") center center / cover no-repeat;
+
+  @media screen and (min-width: $tablet) {
+    background: url("/public/assets/high-tech-bg.jpg") center center / cover no-repeat fixed;
+  }
+
+  .avatar-block {
+    .avatar {
+      img {
+        border-radius: 50%;
+      }
+
+      margin: 0 auto;
+    }
+
+    .title.name {
+      text-align: center;
+      font-family: 'Audiowide', Helvetica, sans-serif;
+      color: #ddd;
+      -webkit-text-fill-color: $magenta-light;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: white;
+    }
+
+    margin-bottom: 8%;
+  }
+
+  .elsewhere {
+    .elsewhere-item {
+      @include hover-grow(1.4);
+
+      &:hover::after {
+        position: absolute;
+        font-size: 0.65em;
+        text-align: center;
+        top: 5em;
+        left: 0;
+        right: 0;
+
+        @media screen and (min-width: $tablet) {
+          font-size: 0.8em;
+          top: 4em;
+        }
+      }
+
+      &.github:hover::after {
+        content: "Github";
+      }
+
+      &.stackoverflow:hover::after {
+        content: "StackOverflow";
+      }
+
+      &.linkedin:hover::after {
+        content: "LinkedIn";
+      }
+
+      &.mail:hover::after {
+        content: "Email";
+      }
+
+      &.resume:hover::after {
+        content: "Resumé";
+      }
+    }
+
+    margin: 10% auto;
+    max-width: 650px;
+  }
+}
+

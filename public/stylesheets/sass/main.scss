@@ -1,6 +1,7 @@
 @import "colors";
 @import "breakpoints";
 @import "mixins";
+@import "intro";
 @import "skills-list";
 
 //external
@@ -12,83 +13,4 @@ body {
   background-color: $teal-light;
 }
 
-.avatar-card {
-  .avatar {
-    img {
-      border-radius: 50%;
-    }
-
-    margin: 5% auto;
-  }
-
-  .title.name {
-    text-align: center;
-    font-family: 'Audiowide', Helvetica, sans-serif;
-    color: #ddd;
-    -webkit-text-fill-color: $magenta-light;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: white;
-  }
-}
-
-.intro-hero {
-  .intro {
-    margin: 0 auto 15%;
-    padding: 1%;
-    max-width: 650px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: justify;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-
-  min-height: 100vh; // fix for mobile browser address bar appearing disappearing
-  background: url("/public/assets/high-tech-mobile-bg.jpg") center center / cover no-repeat;
-
-  @media screen and (min-width: $tablet) {
-    background: url("/public/assets/high-tech-bg.jpg") center center / cover no-repeat fixed;
-  }
-}
-
-.elsewhere {
-  .elsewhere-item {
-    @include hover-grow(1.4);
-
-    &:hover::after {
-      position: absolute;
-      font-size: 0.65em;
-      text-align: center;
-      top: 5em;
-      left: 0;
-      right: 0;
-
-      @media screen and (min-width: $tablet) {
-        font-size: 0.8em;
-        top: 4em;
-      }
-    }
-
-    &.github:hover::after {
-      content: "Github";
-    }
-
-    &.stackoverflow:hover::after {
-      content: "StackOverflow";
-    }
-
-    &.linkedin:hover::after {
-      content: "LinkedIn";
-    }
-
-    &.mail:hover::after {
-      content: "Email";
-    }
-
-    &.resume:hover::after {
-      content: "Resumé";
-    }
-  }
-
-  margin: 0 auto;
-  max-width: 650px;
-}
 

@@ -2,112 +2,120 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:400,700");
-.skills {
-  background-color: #eee;
-  padding: 2em; }
-  .skills .title {
+#intro-section {
+  background: url("/public/assets/high-tech-mobile-bg.jpg") center center/cover no-repeat; }
+  #intro-section .intro {
+    margin: 0 auto;
+    max-width: 650px; }
+    #intro-section .intro p {
+      font-family: 'Ubuntu', sans-serif;
+      text-align: justify;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      line-height: 1.5;
+      word-break: break-word;
+      margin: 0.5em 0; }
+      @media (min-width: 375px) {
+        #intro-section .intro p {
+          font-size: 1.15em; } }
+      @media (min-width: 769px) {
+        #intro-section .intro p {
+          font-size: 1.4em; } }
+  @media screen and (min-width: 769px) {
+    #intro-section {
+      background: url("/public/assets/high-tech-bg.jpg") center center/cover no-repeat fixed; } }
+  #intro-section .avatar-block {
+    margin-bottom: 8%; }
+    #intro-section .avatar-block .avatar {
+      margin: 0 auto; }
+      #intro-section .avatar-block .avatar img {
+        border-radius: 50%; }
+    #intro-section .avatar-block .title.name {
+      text-align: center;
+      font-family: 'Audiowide', Helvetica, sans-serif;
+      color: #ddd;
+      -webkit-text-fill-color: #ae2d76;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: white; }
+  #intro-section .elsewhere {
+    margin: 10% auto;
+    max-width: 650px; }
+    #intro-section .elsewhere .elsewhere-item {
+      transition: all 0.2s ease-in-out; }
+      #intro-section .elsewhere .elsewhere-item:hover {
+        transform: scale(1.4); }
+      #intro-section .elsewhere .elsewhere-item:hover::after {
+        position: absolute;
+        font-size: 0.65em;
+        text-align: center;
+        top: 5em;
+        left: 0;
+        right: 0; }
+        @media screen and (min-width: 769px) {
+          #intro-section .elsewhere .elsewhere-item:hover::after {
+            font-size: 0.8em;
+            top: 4em; } }
+      #intro-section .elsewhere .elsewhere-item.github:hover::after {
+        content: "Github"; }
+      #intro-section .elsewhere .elsewhere-item.stackoverflow:hover::after {
+        content: "StackOverflow"; }
+      #intro-section .elsewhere .elsewhere-item.linkedin:hover::after {
+        content: "LinkedIn"; }
+      #intro-section .elsewhere .elsewhere-item.mail:hover::after {
+        content: "Email"; }
+      #intro-section .elsewhere .elsewhere-item.resume:hover::after {
+        content: "Resumé"; }
+
+#skills-section {
+  background-color: #eee; }
+  #skills-section .title {
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
-    color: #048c6e; }
-    .skills .title::before {
+    color: #048c6e;
+    margin-bottom: 10%; }
+    #skills-section .title::before {
       font-family: "FontAwesome";
       content: "\f0ad ";
       margin-right: 0.25em; }
-  .skills #primary-skills-list {
-    margin-bottom: 1.5em; }
-    .skills #primary-skills-list .skill {
+  #skills-section #primary-skills-list {
+    margin: 10% 0; }
+    #skills-section #primary-skills-list .skill {
       padding: 0.7em;
       flex: none;
       width: 50%; }
       @media (min-width: 400px) {
-        .skills #primary-skills-list .skill {
+        #skills-section #primary-skills-list .skill {
           width: 33.333%; } }
       @media (min-width: 769px) {
-        .skills #primary-skills-list .skill {
+        #skills-section #primary-skills-list .skill {
           padding: 1em;
           width: 25%; } }
       @media (min-width: 1384px) {
-        .skills #primary-skills-list .skill {
+        #skills-section #primary-skills-list .skill {
           width: 16.66667%; } }
-    .skills #primary-skills-list .skill-meter {
+    #skills-section #primary-skills-list .skill-meter {
       transition: all 0.2s ease-in-out;
       padding: 2em;
       font-size: 0.7em;
       width: 100%; }
-      .skills #primary-skills-list .skill-meter:hover {
+      #skills-section #primary-skills-list .skill-meter:hover {
         transform: scale(1.1); }
       @media screen and (min-width: 600px) {
-        .skills #primary-skills-list .skill-meter {
+        #skills-section #primary-skills-list .skill-meter {
           padding: 2.5em;
           font-size: 1em; } }
-  .skills #secondary-skills-list .tag {
+  #skills-section #secondary-skills-list .tag {
     transition: all 0.2s ease-in-out;
-    font-size: 0.65em;
+    font-size: 0.6em;
     height: 3em;
     color: #048c6e;
     background-color: #fff; }
-    .skills #secondary-skills-list .tag:hover {
+    #skills-section #secondary-skills-list .tag:hover {
       transform: scale(1.2); }
-    @media screen and (min-width: 360px) {
-      .skills #secondary-skills-list .tag {
-        font-size: 0.8em; } }
+    @media screen and (min-width: 375px) {
+      #skills-section #secondary-skills-list .tag {
+        font-size: 0.7em; } }
 
 body {
   background-color: #3dab93; }
-
-.avatar-card .avatar {
-  margin: 5% auto; }
-  .avatar-card .avatar img {
-    border-radius: 50%; }
-.avatar-card .title.name {
-  text-align: center;
-  font-family: 'Audiowide', Helvetica, sans-serif;
-  color: #ddd;
-  -webkit-text-fill-color: #ae2d76;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: white; }
-
-.intro-hero {
-  min-height: 100vh;
-  background: url("/public/assets/high-tech-mobile-bg.jpg") center center/cover no-repeat; }
-  .intro-hero .intro {
-    margin: 0 auto 15%;
-    padding: 1%;
-    max-width: 650px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: justify;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  @media screen and (min-width: 769px) {
-    .intro-hero {
-      background: url("/public/assets/high-tech-bg.jpg") center center/cover no-repeat fixed; } }
-
-.elsewhere {
-  margin: 0 auto;
-  max-width: 650px; }
-  .elsewhere .elsewhere-item {
-    transition: all 0.2s ease-in-out; }
-    .elsewhere .elsewhere-item:hover {
-      transform: scale(1.4); }
-    .elsewhere .elsewhere-item:hover::after {
-      position: absolute;
-      font-size: 0.65em;
-      text-align: center;
-      top: 5em;
-      left: 0;
-      right: 0; }
-      @media screen and (min-width: 769px) {
-        .elsewhere .elsewhere-item:hover::after {
-          font-size: 0.8em;
-          top: 4em; } }
-    .elsewhere .elsewhere-item.github:hover::after {
-      content: "Github"; }
-    .elsewhere .elsewhere-item.stackoverflow:hover::after {
-      content: "StackOverflow"; }
-    .elsewhere .elsewhere-item.linkedin:hover::after {
-      content: "LinkedIn"; }
-    .elsewhere .elsewhere-item.mail:hover::after {
-      content: "Email"; }
-    .elsewhere .elsewhere-item.resume:hover::after {
-      content: "Resumé"; }
 
 /*# sourceMappingURL=main.css.map */
