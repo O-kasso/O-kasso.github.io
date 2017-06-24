@@ -148,9 +148,9 @@
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0); }
   40% {
-    transform: translateY(-4vh); }
+    transform: translateY(-2vh); }
   60% {
-    transform: translateY(-2vh); } }
+    transform: translateY(-1vh); } }
 body {
   background-color: #3dab93; }
 
