@@ -26,18 +26,29 @@
     .avatar {
       img {
         border-radius: 50%;
+        width: 30%;
+        max-width: 128px;
+        margin: 0 auto 0.5em;
       }
 
       margin: 0 auto;
     }
 
-    .title.name {
+    .name {
       text-align: center;
+      font-size: 2.2em;
       font-family: 'Audiowide', Helvetica, sans-serif;
-      color: #ddd;
+      line-height: 1;
+      color: #ddd; // fallback
+
       -webkit-text-fill-color: $magenta-light;
-      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: white;
+
+      @media (min-width: $tablet) {
+        font-size: 3em;
+        -webkit-text-stroke-width: 1.5px;
+      }
     }
 
     margin-bottom: 8%;
@@ -82,7 +93,7 @@
       }
     }
 
-    margin: 10% auto;
+    margin: 15% auto;
     max-width: 650px;
   }
 }
