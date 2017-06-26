@@ -112,17 +112,21 @@
         #skills-section #primary-skills-list .skill-meter {
           padding: 2.5em;
           font-size: 1em; } }
-  #skills-section #secondary-skills-list .tag {
-    transition: all 0.2s ease-in-out;
-    font-size: 0.6em;
-    height: 3em;
-    color: #048c6e;
-    background-color: #fff; }
-    #skills-section #secondary-skills-list .tag:hover {
-      transform: scale(1.2); }
-    @media screen and (min-width: 375px) {
-      #skills-section #secondary-skills-list .tag {
-        font-size: 0.7em; } }
+  #skills-section #secondary-skills-list {
+    width: 96%;
+    margin: 0 auto; }
+    #skills-section #secondary-skills-list .card {
+      transition: all 0.2s ease-in-out;
+      font-size: 0.6em;
+      height: 3em;
+      color: #048c6e;
+      background-color: #fff;
+      border-radius: 30%/100%; }
+      #skills-section #secondary-skills-list .card:hover {
+        transform: scale(1.2); }
+      @media screen and (min-width: 375px) {
+        #skills-section #secondary-skills-list .card {
+          font-size: 0.7em; } }
 
 .next-section {
   text-align: center; }

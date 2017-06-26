@@ -49,18 +49,22 @@
   }
 
   #secondary-skills-list {
-    .tag {
+    .card {
       @include hover-grow(1.2);
 
       font-size: 0.6em;
       height: 3em;
       color: $teal;
       background-color: #fff;
+      border-radius: 30%/100%;
 
       @media screen and (min-width: 375px) {
         font-size: 0.7em;
       }
     }
+
+    width: 96%;
+    margin: 0 auto;
   }
 
   background: #eee url("/public/assets/cubes.png");
