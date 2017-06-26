@@ -75,7 +75,7 @@
         content: "Resumé"; }
 
 #skills-section {
-  background-color: #eee; }
+  background: #eee url("/public/assets/cubes.png"); }
   #skills-section .title {
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
