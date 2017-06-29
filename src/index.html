@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public/stylesheets/main.css">
-    <script src="/public/javascript/progressbar.js" defer></script>
-    <script src="/public/javascript/waypoints.js" defer></script>
-    <script src="/public/javascript/skill_progress.js" defer></script>
-    <script src="/public/javascript/scroll-arrow.js" defer></script>
+    <!--build:css assets/css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--endbuild-->
     <title>Omar Kassouar | Developer</title>
   </head>
   <body>
@@ -15,7 +13,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="avatar-block">
-            <div class="avatar image"><img src="public/assets/avatar.jpg" alt="avatar"></div>
+            <div class="avatar image"><img src="assets/img/avatar.jpg" alt="avatar"></div>
             <h1 class="title is-spaced name">Omar Kassouar</h1>
           </div>
           <div class="intro">
@@ -56,7 +54,7 @@
               </a>
             </li>
             <li class="elsewhere-item level-item resume">
-              <a href="/OmarKassoResume.pdf" target="_blank">
+              <a href="/assets/pdf/OmarKassoResume.pdf" target="_blank">
                 <span class="icon is-large">
                   <i class="fa fa-print"></i>
                 </span>
@@ -135,5 +133,11 @@
         </div>
       </div>
     </section>
+    <!--build:js assets/js/main.min.js defer -->
+    <script src="/assets/js/progressbar.js"></script>
+    <script src="/assets/js/waypoints.js"></script>
+    <script src="/assets/js/skill_progress.js"></script>
+    <script src="/assets/js/scroll-arrow.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

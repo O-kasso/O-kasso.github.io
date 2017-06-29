@@ -16,10 +16,10 @@
     max-width: 650px;
   }
 
-  background: url("/public/assets/high-tech-mobile-bg.jpg") center center / cover no-repeat;
+  background: url("/assets/img/high-tech-mobile-bg.jpg") center center / cover no-repeat;
 
   @media screen and (min-width: $tablet) {
-    background: url("/public/assets/high-tech-bg.jpg") center center / cover no-repeat fixed;
+    background: url("/assets/img/high-tech-bg.jpg") center center / cover no-repeat fixed;
   }
 
   .avatar-block {

@@ -3,7 +3,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Ubuntu:400,700");
 #intro-section {
-  background: url("/public/assets/high-tech-mobile-bg.jpg") center center/cover no-repeat; }
+  background: url("/assets/img/high-tech-mobile-bg.jpg") center center/cover no-repeat; }
   #intro-section .intro {
     margin: 0 auto;
     max-width: 650px; }
@@ -22,7 +22,7 @@
           font-size: 1.4em; } }
   @media screen and (min-width: 769px) {
     #intro-section {
-      background: url("/public/assets/high-tech-bg.jpg") center center/cover no-repeat fixed; } }
+      background: url("/assets/img/high-tech-bg.jpg") center center/cover no-repeat fixed; } }
   #intro-section .avatar-block {
     margin-bottom: 8%; }
     #intro-section .avatar-block .avatar {
@@ -75,7 +75,7 @@
         content: "Resumé"; }
 
 #skills-section {
-  background: #eee url("/public/assets/cubes.png"); }
+  background: #eee url("/assets/img/cubes.png"); }
   #skills-section .title {
     text-align: center;
     font-family: 'Audiowide', Helvetica, sans-serif;
