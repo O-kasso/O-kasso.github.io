@@ -53,13 +53,18 @@ gulp.task('pdfs', function() {
     .pipe(gulp.dest('dist'));
 });
 
+gulp.task('cname', function() {
+  return gulp.src('src/CNAME')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'pdfs'],
+    ['sass', 'useref', 'images', 'pdfs', 'cname'],
     callback
   );
 });
