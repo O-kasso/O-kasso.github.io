@@ -11,6 +11,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('sass', function(){
   return gulp.src('src/assets/scss/**/*.scss')
@@ -47,13 +48,18 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/assets/img'));
 });
 
+gulp.task('pdfs', function() {
+  return gulp.src('src/**/*.pdf')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 });
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images'],
+    ['sass', 'useref', 'images', 'pdfs'],
     callback
   );
 });
@@ -62,4 +68,9 @@ gulp.task('default', function (callback) {
   runSequence(['sass','browserSync', 'watch'],
     callback
   );
+});
+
+gulp.task('deploy', ['build'], function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
