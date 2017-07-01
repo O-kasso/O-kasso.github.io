@@ -1,3 +1,7 @@
+# npm and gulp
+node_modules
+.publish
+
 # Vim files #
 **/*~
 **/*.bak
