@@ -11,7 +11,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
-var ghPages = require('gulp-gh-pages');
+var exec = require('child_process').exec;
 
 gulp.task('sass', function(){
   return gulp.src('src/assets/scss/**/*.scss')
@@ -76,6 +76,14 @@ gulp.task('default', function (callback) {
 });
 
 gulp.task('deploy', ['build'], function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+  exec(
+    'cd "$(git rev-parse --show-toplevel)" && git checkout src &>/dev/null && git subtree push --prefix dist origin master',
+    function (error, stdout, stderr) {
+      if (error !== null) {
+       console.error('exec error: ' + error);
+      }
+      console.log('stdout: ' + stdout);
+      console.log('stderr: ' + stderr);
+    }
+  );
 });
